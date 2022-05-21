@@ -6,12 +6,6 @@ touch lista
 [[ -z $1 ]] && {
     clear && echo "INFORME O TOKEN" && return 0
 }
-# Informações Server 2
-ip_server2="SEU-IP-AQUI"
-senha_server2="SUA-SENHA-AQUI"
-# Informações Server 3
-ip_server3="SEU-IP-AQUI"
-senha_server3="SUA-SENHA-AQUI"
 [[ ! -e RESET ]] && touch RESET
 api_bot=$1
 ShellBot.init --token "$api_bot" --monitor --flush
@@ -39,7 +33,7 @@ criarteste() {
       return 0
     }
     usuario=$(echo TESTE$(( RANDOM% + 999 )))
-    senha=$((RANDOM% + 9999))
+    senha=$((RANDOM% + 999999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
