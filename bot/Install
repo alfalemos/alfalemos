@@ -11,8 +11,8 @@
     cd $HOME/BOT
     rm -rf $HOME/BOT/botssh
     wget https://github.com/alfalemos/alfalemos/raw/main/bot/botssh >/dev/null 2>&1
-    rm -rf $HOME/BOT/ShellBot.sh
-    wget https://github.com/alfalemos/alfalemos/raw/main/bot/botssh >/dev/null 2>&1
+    rm -rf $HOME/ShellBot.sh
+    wget https://github.com/alfalemos/alfalemos/raw/main/bot/ShellBot.sh >/dev/null 2>&1
     chmod 777 botssh 
     chmod 777 ShellBot.sh
     echo ""
